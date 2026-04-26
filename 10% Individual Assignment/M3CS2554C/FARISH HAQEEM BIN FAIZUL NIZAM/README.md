@@ -205,7 +205,7 @@ The Hybrid Sniffer Engine was tested with a synthetic load of 50,000 packets. Th
 
 #
 
-<img width="900" height="450" alt="image" src="https://github.com/user-attachments/assets/7f4424ee-dc59-4b8b-a8ce-8a4cb804a5f1" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/7f4424ee-dc59-4b8b-a8ce-8a4cb804a5f1" />
 
 | Mode | Time (s) | Throughput (Pkts/sec) |
 | :--- | :--- | :--- |
@@ -215,18 +215,20 @@ The Hybrid Sniffer Engine was tested with a synthetic load of 50,000 packets. Th
 ### 📡 Live Sniffing Results
 During a 30-second live capture on the `Intel(R) Wireless-AC 9560`, the engine processed **4,286 packets**.
 
-<img width="900" height="540" alt="image" src="https://github.com/user-attachments/assets/840f7f43-5d4e-4e3c-8674-25e497ff0cd3" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/840f7f43-5d4e-4e3c-8674-25e497ff0cd3" />
 
 - **Traffic Type:** The capture consisted of 89.5% UDP traffic and 10.5% TCP traffic.
 - **Security:** 79.2% of packets ($3,396$) were flagged as encrypted based on a Shannon entropy threshold of $> 7.0$.
 - **Latency:** The average DPI latency stabilized at approximately **84.36 ms** during peak throughput.
 
 <p align="middle">
-  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/36aff374-da9b-442c-aa9c-758166b08f57" />
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/36aff374-da9b-442c-aa9c-758166b08f57" />
 </p>
+
 #
 
-<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/d36d68c9-8e0b-49fa-ab87-7c3f5feb47ea" />
+<img width="700" height="525" alt="image" src="https://github.com/user-attachments/assets/d36d68c9-8e0b-49fa-ab87-7c3f5feb47ea" />
 
 ---
-
+## 📋 Conclusion
+The Hybrid High-Throughput Sniffer Engine proves that modern network monitoring requires more than a single-core approach. By splitting the workload—using threading for data capture and multiprocessing for heavy analysis—the system achieved a **1.35x performance boost**. This design prevents bottlenecks, ensuring that the engine can process high volumes of traffic and calculate entropy in real-time without dropping packets or lagging behind the network stream.
